@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>YeP Tool Tip Demo</title>
+<style>
+</style>
+<link  rel="stylesheet" href="src\css\YePToolTip.css" type="text/css"></link>
+<script src="src\js\jQuery\jquery-1.8.2.js" type="text/javascript" charset="utf-8"></script>
+<script src="src\js\YepToolTip.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+$(function(){
+$("#MyinputRight").YePToolTip({ToolTip:"I am showing Tool Tip on Rigth side of the parent."});
+$("#MyinputUp").YePToolTip({position:"up",ToolTip:"I am showing Tool Tip on top of parent."});
+$("#MyinputLeft").YePToolTip({position:"left",ToolTip:"I am showing Tool Tip on Left side of the parent."});
+$("#MyinputDown").YePToolTip({position:"down",ToolTip:"I am showing Tool Tip below parent."});
+});
+</script>
+</head>
+<body>
+<div>
+<div style='width:100%;margin:15%;'>
+<table >
+	<tr>
+		<td width="75%">
+		<div style='float:left;'>
+	<div>Tool Tip on Right</div>
+	<input id='MyinputRight' class="MyLan"/>
+	<div class="MyVal"></div>
+</div>
+		</td>
+		<td>
+		<div style='float:left;'>
+	<div>Tool Tip on Top</div>
+	<input id='MyinputUp' class="MyLan"/>
+	<div class="MyVal"></div>
+</div>
+		</td>
+		
+	</tr>
+	<tr>
+		<td><div style='float:left;'>
+	<div>Tool Tip Below</div>
+	<input id='MyinputDown' class="MyLan"/>
+	<div class="MyVal"></div>
+</div>
+		</td>
+		<td><div style='float:right;'>
+	<div>Tool Tip on Left</div>
+	<input id='MyinputLeft' class="MyLan" style='float:right;'/>
+	<div class="MyVal"></div>
+</div>
+		</td>
+	</tr>
+</table>
+</div>
+<div style='width:100%;height:200px;'></div>
+
+<div style='width:100%;height:200px;'></div>
+
+<div style='width:100%;height:50px;float:left'></div>
+
+</div>
+
+</body>
+</html>

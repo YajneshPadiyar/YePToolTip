@@ -1,0 +1,10 @@
+/*YePToolTip CSS details*/
+.Arr-Up,.Arr-Down,.Arr-Right,.Arr-Left{width : 0;height : 0;position:absolute;}
+.Arr-Up,.Arr-Down{border-left: 10px solid transparent;border-right: 10px solid transparent;	}
+.Arr-Right,.Arr-Left{border-top: 10px solid transparent;	border-bottom: 10px solid transparent;	}
+.Arr-Up {border-bottom: 10px solid blue;}
+.Arr-Down {	border-top: 10px solid blue;}
+.Arr-Right {border-left: 10px solid blue;}
+.Arr-Left {	border-right:10px solid blue; }
+.ToolTip{display:block;}
+.ToolTip-Data{width:200px; border:2px solid #0000FF;background:none repeat scroll 0 0 #ADD8E6;padding:10px;border-radius:10px;}
