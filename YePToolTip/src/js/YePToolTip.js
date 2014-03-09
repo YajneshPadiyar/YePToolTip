@@ -19,23 +19,6 @@
             $("body").after('<div id="ToolTip-Information-Hover" ><div class="ToolTip-Data"></div> <div id = "ToolTipArrow" class=""></div><div class="ToolTip"></div></div>');
             $(".ToolTip-Data").text(ToolTipSetup.ToolTip);
             ArrowPos(parent);
-
-            /*var Poffset = $(this).offset();
-            var Pwidth = $(this).css("width");
-            var Pwidth = Number(Pwidth.substring(Pwidth.length - 2, 0));
-            var Pleft = Poffset.left + Pwidth;
-            $(".Arr-Left").css({
-            "position" : "absolute"
-            });
-            $(".Arr-Left").css("top", Poffset.top);
-            $(".Arr-Left").css("left", Pleft).show();
-            //*/
-            /*var AOffset = $(".Arr-Left").offset();
-            var AWidth = $(".Arr-Left").css("border-bottom-width");
-            AWidth = Number(AWidth.substring(AWidth.length - 2, 0))
-            var ALeft = AWidth + AOffset.left;
-            $(".ToolTip-Data").css("position", "absolute").css("top", AOffset.top).css("left", ALeft);
-            $(".ToolTip").show();//*/
          });
          $(this).bind("mouseleave", function () {
             console.log("Leave Working");
